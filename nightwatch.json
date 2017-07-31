@@ -1,0 +1,40 @@
+{
+  "src_folders" : ["tests"],
+  "output_folder" : "reports",
+  "selenium" : {
+    "start_process" : true,
+    "server_path" : "./libs/selenium-server-standalone-3.4.0.jar",
+    "port" : 4444,
+    "cli_args" : {
+      "webdriver.chrome.driver" : "./node_modules/chromedriver/bin/chromedriver"
+    }
+  },
+  "test_settings" : {
+    "default" : {
+      "screenshots" : {
+        "enabled" : true,
+        "path" : "screenshots/"
+      }
+    },
+		"mobileweb": {
+			"launch_url" : "http://127.0.0.1",
+      "selenium_port"  : 4444,
+      "selenium_host"  : "127.0.0.1",
+      "silent" : true,
+      "disable_colors": false,
+      "screenshots" : {
+        "enabled" : true,
+        "path" : "screenshots/"
+      },
+			"desiredCapabilities": {
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "marionette": false,
+        "acceptSslCerts": true,
+        "chromeOptions" : {
+          "args" : ["start-fullscreen, --no-sandbox"]
+        }
+      }
+		}
+  }
+}

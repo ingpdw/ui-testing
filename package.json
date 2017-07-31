@@ -1,0 +1,19 @@
+{
+  "name": "ui-testing",
+  "version": "1.0.0",
+  "description": "nightwatch test",
+  "main": "nightwatch.config.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "DBUS_SESSION_BUS_ADDRESS=/dev/null ./node_modules/.bin/nightwatch --env mobileweb",
+    "verbose": "DBUS_SESSION_BUS_ADDRESS=/dev/null ./node_modules/.bin/nightwatch --env mobileweb --verbose"
+  },
+  "author": "ingpdw@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "chromedriver": "^2.31.0",
+    "nightwatch": "^0.9.16"
+  }
+}
