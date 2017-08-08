@@ -7,8 +7,9 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "DBUS_SESSION_BUS_ADDRESS=/dev/null ./node_modules/.bin/nightwatch --env mobileweb",
-    "verbose": "DBUS_SESSION_BUS_ADDRESS=/dev/null ./node_modules/.bin/nightwatch --env mobileweb --verbose"
+    "test": "DBUS_SESSION_BUS_ADDRESS=/dev/null ./node_modules/.bin/nightwatch --env kpop",
+    "editor": "DBUS_SESSION_BUS_ADDRESS=/dev/null ./node_modules/.bin/nightwatch --env editor",
+    "verbose": "DBUS_SESSION_BUS_ADDRESS=/dev/null ./node_modules/.bin/nightwatch --env kpop --verbose"
   },
   "author": "ingpdw@gmail.com",
   "license": "ISC",

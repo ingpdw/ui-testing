@@ -10,13 +10,7 @@
     }
   },
   "test_settings" : {
-    "default" : {
-      "screenshots" : {
-        "enabled" : true,
-        "path" : "screenshots/"
-      }
-    },
-		"mobileweb": {
+		"default": {
 			"launch_url" : "http://127.0.0.1",
       "selenium_port"  : 4444,
       "selenium_host"  : "127.0.0.1",
@@ -35,6 +29,8 @@
           "args" : ["start-fullscreen, --no-sandbox"]
         }
       }
-		}
+		},
+    "kpop": { "globals": { "site": "kpop"} },
+    "editor": { "globals": { "site": "editor"} }
   }
 }
